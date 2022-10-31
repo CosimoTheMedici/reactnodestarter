@@ -1,0 +1,33 @@
+{
+  "name": "reactnodestarter",
+  "version": "1.0.0",
+  "description": "React and Express",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "client-install":"cd client && npm install",
+    "start1": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm start --prefix client",
+    "start": "concurrently \"npm run server\"\"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CosimoTheMedici/reactnodestarter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CosimoTheMedici/reactnodestarter/issues"
+  },
+  "homepage": "https://github.com/CosimoTheMedici/reactnodestarter#readme",
+  "dependencies": {
+    "concurrently": "^7.5.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
